@@ -1,0 +1,10 @@
+#!/bin/bash
+PYFILE="$PYFILE"
+OUTPUT_FILE="${PYFILE%.py}.pyc"
+
+echo "Compiling $PYFILE ..."
+python3 -m py_compile "$PYFILE"
+if [ -f "$OUTPUT_FILE" ]; then
+    mv "$OUTPUT_FILE" .
+fi
+
