@@ -1,0 +1,26 @@
+# Test case 1
+>>> text_indentation("Hello. How are you today?")
+Hello.$
+$
+How are you today?$
+
+# Test case 2
+>>> text_indentation("This is a test. Another test?")
+This is a test.$
+$
+Another test?$
+
+# Test case 3
+>>> text_indentation("No separation here")
+No separation here
+
+# Test case 4
+>>> text_indentation("")
+(no output)
+
+# Test case 5
+>>> text_indentation(123)
+Traceback (most recent call last):
+    ...
+TypeError: text must be a string
+
